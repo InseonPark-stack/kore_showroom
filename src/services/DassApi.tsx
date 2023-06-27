@@ -9,7 +9,7 @@ interface InsertValue {
 export const getVideoList = async () => {
   try {
     const response = await axios.get(
-      "http://localhost:3003/api/dass/getVideoList"
+      "http://35.216.17.150:3003/api/dass/getVideoList"
     );
     return response;
   } catch (error) {
@@ -26,7 +26,7 @@ export const putVideoList = async (InsertValue: InsertValue) => {
     };
 
     const response = await axios.post(
-      "http://localhost:3003/api/dass/putVideoList",
+      "http://35.216.17.150:3003/api/dass/putVideoList",
       data
     );
     return response;
@@ -38,7 +38,7 @@ export const putVideoList = async (InsertValue: InsertValue) => {
 export const deleteVideoList = async (title: string) => {
   try {
     const response = await axios.get(
-      "http://localhost:3003/api/dass/deleteVideoList?title=" + title
+      "http://35.216.17.150:3003/api/dass/deleteVideoList?title=" + title
     );
     return response;
   } catch (error) {
