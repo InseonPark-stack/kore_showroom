@@ -1,0 +1,27 @@
+/* 작은 화면에 대한 스타일 */
+@media screen and (max-width: 600px) {
+  .d-block {
+    width: 100vw;
+    height: 36vw;
+  }
+}
+
+/* 중간 크기 화면에 대한 스타일 */
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .d-block {
+    width: 90vw;
+    height: 33vw;
+  }
+}
+
+/* 큰 화면에 대한 스타일 */
+@media screen and (min-width: 1201px) {
+  .d-block {
+    width: 70vw;
+    height: 26vw;
+  }
+}
+.carousel {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

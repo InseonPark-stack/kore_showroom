@@ -1,0 +1,44 @@
+.logo-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .left-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+  }
+  .center-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      vertical-align: middle;
+      margin: 0px;
+      font-family: "Roboto Mono", monospace;
+      font-weight: 600;
+    }
+  }
+  .right-title {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    h1 {
+      margin: 0 10px 0 0;
+    }
+    svg {
+      margin-right: 5px;
+      width: 30px !important;
+      height: 30px !important;
+    }
+  }
+}
+
+@media (max-width: 448px) {
+  .right-title {
+    h1 {
+      display: none;
+    }
+  }
+}
