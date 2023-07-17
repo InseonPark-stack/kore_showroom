@@ -9,6 +9,7 @@ import { RiVideoLine } from "react-icons/ri";
 import { BiPhoneCall } from "react-icons/bi";
 import "./Tabs.css";
 import AddonBtn from "./AddonBtn";
+import Contact from "./ContactComponent";
 
 function FillExample() {
   const [key, setKey] = useState("home");
@@ -60,9 +61,8 @@ function FillExample() {
             <BiPhoneCall /> Contact
           </span>
         }
-        disabled
       >
-        Tab content for Contact
+        <Contact />
       </Tab>
     </Tabs>
   );

@@ -24,6 +24,11 @@ function IntroducingContent() {
         popupY
     );
   };
+  const googleDriveLink = () => {
+    window.open(
+      "https://drive.google.com/file/d/1C4_7iP_2L6ooNseT-UuVfJ9kMmVKGL0-/view?usp=drive_link"
+    );
+  };
   return (
     <Card id="cardFlex" style={{ width: "100%" }}>
       <Card.Body>
@@ -34,8 +39,8 @@ function IntroducingContent() {
           width="300px"
           height="200px"
         />
-        <Button variant="link" onClick={() => onDemoLink("Kore AI")}>
-          Kore.ai Demo
+        <Button variant="link" onClick={() => googleDriveLink()}>
+          문서 확인
         </Button>
       </Card.Body>
       <Card.Body>

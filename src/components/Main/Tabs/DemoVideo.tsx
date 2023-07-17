@@ -16,7 +16,7 @@ function DemoVideo() {
     async function fetchVideoList() {
       try {
         const response = await getVideoList();
-        if (response?.status == 200) {
+        if (response?.status === 200) {
           setVideoList(response.data);
         } else {
           throw new Error("Loom Video 불러오기 오류");
@@ -32,8 +32,8 @@ function DemoVideo() {
     <Card id="cardFlex" style={{ width: "100%" }}>
       {videoList.map((video) => (
         <Card.Body key={video.title}>
-          <Card.Title>{video.title}</Card.Title>
           <LoomVideo videoUrl={video.urlLink} />
+          <Card.Title>{video.title}</Card.Title>
           {video.description}
         </Card.Body>
       ))}

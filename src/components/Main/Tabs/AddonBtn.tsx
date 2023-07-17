@@ -26,7 +26,7 @@ function AddonBtn() {
   };
 
   return (
-    <div>
+    <div className="btnPkg">
       <Button variant="success" onClick={openAddonModal}>
         추가하기
       </Button>

@@ -1,7 +1,7 @@
 .logo-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
   .left-title {
     display: flex;
     align-items: center;
@@ -20,14 +20,29 @@
       font-weight: 600;
     }
   }
+}
+
+.icon-role {
+  text-align: right;
   .right-title {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     cursor: pointer;
+    span {
+      font: normal normal normal 14px/1.4em helvetica-w01-roman,
+        helvetica-w02-roman, helvetica-lt-w10-roman, sans-serif;
+    }
     h1 {
       margin: 0 10px 0 0;
     }
     svg {
+      margin-left: 5px;
+      margin-right: 5px;
+      width: 30px !important;
+      height: 30px !important;
+    }
+    img {
+      margin-left: 5px;
       margin-right: 5px;
       width: 30px !important;
       height: 30px !important;

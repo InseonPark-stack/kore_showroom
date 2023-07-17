@@ -8,7 +8,6 @@ function HomeContent() {
 
   useEffect(() => {
     setToggleChild(true);
-    console.log("HomeContent" + toggleChild);
   }, [toggleChild]);
 
   return (

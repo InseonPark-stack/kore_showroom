@@ -3,6 +3,7 @@ import "./App.css";
 import UncontrolledExample from "./Main/Carousel";
 import FillExample from "./Main/Tabs/Tabs";
 import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header></Header>
       <UncontrolledExample></UncontrolledExample>
       <FillExample></FillExample>
+      <Footer></Footer>
     </div>
   );
 }
